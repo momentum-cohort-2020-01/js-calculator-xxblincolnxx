@@ -1,5 +1,6 @@
 // REMEMBER EVENT LISTENERS
 // REMEMBER TEMLATE LITERALS
+// REMEMBER node.textContent
 
 // BUTTON VARIABLES
 // SPECIAL DIVS
@@ -9,6 +10,7 @@ const equalKey = document.querySelector('#equals')
 const calculator = document.querySelector('.calculator')
 
 // NUMBER DIVS
+const numberOpPad = document.querySelectorAll('.number-pad')
 const oneButton = document.querySelector('#one')
 const twoButton = document.querySelector('#two')
 const threeButton = document.querySelector('#three')
@@ -65,69 +67,80 @@ equalKey.addEventListener('click', function () {
   displayBox.append(text)
 })
 
-// SPECIFIC BUTTON FUNCTIONS:
-oneButton.addEventListener('click', function () {
-  let text = document.createTextNode("1")
+//ATTEMPT AT LOOP
+for(let element of numberOpPad){
+  element.addEventListener('click', function(){
+  let text = element.textContent
   displayBox.append(text)
-})
-twoButton.addEventListener('click', function () {
-  let text = document.createTextNode("2")
-  displayBox.append(text)
-})
-threeButton.addEventListener('click', function () {
-  let text = document.createTextNode("3")
-  displayBox.append(text)
-})
-fourButton.addEventListener('click', function () {
-  let text = document.createTextNode("4")
-  displayBox.append(text)
-})
-fiveButton.addEventListener('click', function () {
-  let text = document.createTextNode("5")
-  displayBox.append(text)
-})
-sixButton.addEventListener('click', function () {
-  let text = document.createTextNode("6")
-  displayBox.append(text)
-})
-sevenButton.addEventListener('click', function () {
-  let text = document.createTextNode("7")
-  displayBox.append(text)
-})
-eightButton.addEventListener('click', function () {
-  let text = document.createTextNode("8")
-  displayBox.append(text)
-})
-nineButton.addEventListener('click', function () {
-  let text = document.createTextNode("9")
-  displayBox.append(text)
-})
-zeroButton.addEventListener('click', function () {
-  let text = document.createTextNode("0")
-  displayBox.append(text)
-})
+  })
+}
 
-addButton.addEventListener('click', function () {
-  let text = document.createTextNode("+")
-  displayBox.append(text)
-})
 
-subtractButton.addEventListener('click', function () {
-  let text = document.createTextNode("-")
-  displayBox.append(text)
-})
 
-multiplyButton.addEventListener('click', function () {
-  let text = document.createTextNode("*")
-  displayBox.append(text)
-})
+// APPROACH WITH INDIVIDUAL FUNCTIONS:
 
-divideButton.addEventListener('click', function () {
-  let text = document.createTextNode("/")
-  displayBox.append(text)
-})
+// oneButton.addEventListener('click', function () {
+//   let text = document.createTextNode("1")
+//   displayBox.append(text)
+// })
+// twoButton.addEventListener('click', function () {
+//   let text = document.createTextNode("2")
+//   displayBox.append(text)
+// })
+// threeButton.addEventListener('click', function () {
+//   let text = document.createTextNode("3")
+//   displayBox.append(text)
+// })
+// fourButton.addEventListener('click', function () {
+//   let text = document.createTextNode("4")
+//   displayBox.append(text)
+// })
+// fiveButton.addEventListener('click', function () {
+//   let text = document.createTextNode("5")
+//   displayBox.append(text)
+// })
+// sixButton.addEventListener('click', function () {
+//   let text = document.createTextNode("6")
+//   displayBox.append(text)
+// })
+// sevenButton.addEventListener('click', function () {
+//   let text = document.createTextNode("7")
+//   displayBox.append(text)
+// })
+// eightButton.addEventListener('click', function () {
+//   let text = document.createTextNode("8")
+//   displayBox.append(text)
+// })
+// nineButton.addEventListener('click', function () {
+//   let text = document.createTextNode("9")
+//   displayBox.append(text)
+// })
+// zeroButton.addEventListener('click', function () {
+//   let text = document.createTextNode("0")
+//   displayBox.append(text)
+// })
 
-decimalButton.addEventListener('click', function () {
-  let text = document.createTextNode(".")
-  displayBox.append(text)
-})
+// addButton.addEventListener('click', function () {
+//   let text = document.createTextNode("+")
+//   displayBox.append(text)
+// })
+
+// subtractButton.addEventListener('click', function () {
+//   let text = document.createTextNode("-")
+//   displayBox.append(text)
+// })
+
+// multiplyButton.addEventListener('click', function () {
+//   let text = document.createTextNode("*")
+//   displayBox.append(text)
+// })
+
+// divideButton.addEventListener('click', function () {
+//   let text = document.createTextNode("/")
+//   displayBox.append(text)
+// })
+
+// decimalButton.addEventListener('click', function () {
+//   let text = document.createTextNode(".")
+//   displayBox.append(text)
+// })
