@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.calc-container {
+  display: flex;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.clear-button {
+  background-color: #E5ACAC;
+  width: 25%;
+  
+}
+
+.display-box {
+  background-color: #ACE5BF;
+  width: 75%;
+  
+}
+
+.num-key {
+  background-color: #5C9E72;
+  width: 25%;
+  
+}
+
+.op-key {
+  background-color: #ACE5BF;
+  width: 25%;
+  
+}
+
+.button {
+  border: .5px solid white;
+  border-bottom: .5px solid lightslategray;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 35px;
+  border-radius: 4px;
+
+}
+
+
+
+
